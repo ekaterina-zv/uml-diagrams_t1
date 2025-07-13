@@ -1,0 +1,17 @@
+@startum!
+class Customer {
+ - ﻿﻿name: String
+ - ﻿﻿email: String + placeOrder(): void
+}
+class Order {
+ - ﻿﻿orderld: int
+ - ﻿﻿date: Date 
+ + calculateTotal(): double
+}
+class PremiumCustomer {
+ + getRewards(): void
+}
+Customer "1" - "0..S" Order :
+places
+Customer <|- PremiumCustomer 
+@enduml
